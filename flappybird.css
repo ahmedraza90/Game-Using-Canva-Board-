@@ -297,13 +297,17 @@ hr {
 
 /* Modal Content */
 .login-content {
-  background: #20113b;
-  border-radius: 5px;
+  /* background: #20113b; */
+  background: rgba(32, 17, 59, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 7px;
   /* border: 1px solid red; */
   /* position: relative; */
+  
   margin: auto;
   margin-top: 4%;
   padding: 5px;
+
   width: fit-content;
   height: fit-content;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -315,8 +319,10 @@ hr {
 
 /* Modal Content */
 .profile-content {
-  background: #20113b;
-  border-radius: 5px;
+  /* background: #20113b; */
+  background: rgba(32, 17, 59, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 7px;
   /* border: 1px solid red; */
   /* position: relative; */
   margin: auto;
@@ -332,8 +338,10 @@ hr {
 }
 
 .leader-content {
-  background: #20113b;
-  border-radius: 5px;
+  /* background: #20113b; */
+  background: rgba(32, 17, 59, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 7px;
   /* border: 1px solid red; */
   /* position: relative; */
   margin: auto;
@@ -349,8 +357,10 @@ hr {
 }
 
 .create-content {
-  background: rgb(68, 189, 0);
-  border-radius: 5px;
+  /* background: rgb(68, 189, 0); */
+  background: rgba(32, 17, 59, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 7px;
   /* border: 1px solid red; */
   /* position: relative; */
   margin: auto;
@@ -365,8 +375,10 @@ hr {
   animation-duration: 0.4s
 }
 .gameOver-content {
-  background: #20113b;
-  border-radius: 5px;
+  /* background: #20113b; */
+  background: rgba(32, 17, 59, 0.8);
+  backdrop-filter: blur(4px);
+  border-radius: 7px;
   /* border: 1px solid red; */
   /* position: relative; */
   margin: auto;
