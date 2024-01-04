@@ -140,7 +140,7 @@ function fetchUser(walletAddress) {
     user.innerHTML = ''
     userNames.innerHTML = ''
     // // Make a POST request to your backend API
-    fetch(`https://qr-code-api.oasisx.world/flappy-get-user/${walletAddress}`, {
+    fetch(`https://qr-code-api.oasisx.world/baller-get-user/${walletAddress}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -169,7 +169,7 @@ function topScore() {
     topScore.innerHTML = ''
 
     // // Make a POST request to your backend API
-    fetch('https://qr-code-api.oasisx.world/flappy-get-all-user', {
+    fetch('https://qr-code-api.oasisx.world/baller-get-all-user', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -198,7 +198,7 @@ function get_leaderBoard_data() {
     yourScore.innerHTML = '';
     yourRank.innerHTML = '';
     // // Make a POST request to your backend API
-    fetch('https://qr-code-api.oasisx.world/flappy-get-all-user', {
+    fetch('https://qr-code-api.oasisx.world/baller-get-all-user', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -251,7 +251,7 @@ function leaderBoard_data(scores=0) {
     yourScore.innerHTML = '';
     yourRank.innerHTML = '';
     // // Make a POST request to your backend API
-    fetch('https://qr-code-api.oasisx.world/flappy-update', {
+    fetch('https://qr-code-api.oasisx.world/baller-update', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -311,7 +311,7 @@ function connectWallet() {
             console.log("Wallet connected:", accounts[0]);
 
             // Send the wallet address to the backend.
-            fetch('https://qr-code-api.oasisx.world/flappy-save', {
+            fetch('https://qr-code-api.oasisx.world/baller-save', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ walletAddress: `${accounts[0]}` })
@@ -351,7 +351,7 @@ function createAcc() {
     topScore()
     if (name.length > 0) {
         // Send the wallet address to the backend.
-        fetch('https://qr-code-api.oasisx.world/flappy-save', {
+        fetch('https://qr-code-api.oasisx.world/baller-save', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ walletAddress, userName: name, email })
